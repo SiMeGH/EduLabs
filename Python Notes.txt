@@ -1,0 +1,130 @@
+Assignment:
+=, +=, -=, *=, /=, **=, %=, //= ~~ v, v = tuple ~~ v: TYPE =
+
+Global:
+pass
+is
+not
+in
+del
+
+Variable Types:
+any
+int, float
+str ~~ '', "" ~~ f"" ~~ """ """ ~~ \n, \t, \, \', \" ~~ [i], [-i], [i:], [i:j], [i:j:n] ~~ +, *
+bool ~~ True/False ~~ ==, >, <, !=, <=, >= ~~ and, or ~~ in/not in ^^str/list^^
+NoneType ~~ None ~~ ^^is^^ None
+list ~~ [], [,] ~~ [i], [-i], [i:], [i:j], [i:j:n] ~~ +, * ~~ v: list[TYPE]
+tuple ~~ (v, v)/v, v >>> v, *v/*v, v/v, *v, v
+dict ~~ {}, {k:v}, {k:v, k:v} ~~ [k] ~~ v: dict[TYPE, TYPE]/v: {TYPE: TYPE} ~~ del v[k]
+set ~~ set()/(v)/(v, v)
+map ~~ map(f, ITR), (f, ITR, ITR)
+
+Arithmetic Operators:
++, -, *, /, %, **, //
+
+Built-In Functions:
+print(str) ~~ (,) ~~ (, end=v>str) ~~ (, sep=v>str) ~~ (str:str<n), <, >, ^
+input(prompt) &&& prompt=str
+type(variable)
+int(n), float(n), str(v), bool(v), tuple(v), list(v), dict(v), set(), map(f, ITR)
+len(ITR)
+enumerate(ITR) ~~ enumerate(ITR, start=n)
+range(i) ~~ (i, j), (i, j, n)
+id(v)
+abs(n)
+sum(ITR)
+isinstance(v, c)
+open(DIR) ~~ open(DIR, str)
+close(?)
+
+Statements:
+if COMP: >>> elif:/else: ~~ v if COMP else v
+match SUBJ: >>> case: VAL/_/VAL | VAL >>> case VAL if COMP:
+while COMP: >>> break/continue
+for v in ITR: >>> for i, v in enumerate(ITR): >>> for v1, v2, ... in zip(ITR, ITR, ...): ~~ (ITR, ITR, ..., strict=bool)
+def NAME(): ~~ (ARG)/(ARG, ARG)/(ARG: TYPE)/) -> TYPE/) -> (TYPE, TYPE) ~~ (ARG=v)
+	>>> return VAL ~~ global v
+	def f(self): >>> (self, p):
+import MOD ~~ from MOD import v/f ~~ from MOD import v as v
+class NAME: ~~ class NAME(NAME):
+	self.v = v
+	~~ super().f
+with open(..., 'f') as v:
+assert COMP >>> assert COMP, str
+raise EXC: >>> Exception(str)
+try: except:/finally: >>> except OBJ: >>> exception OBJ as v:
+
+String Methods:
+.upper(), isupper(), .lower(), .split(delimiter), .find(str,i,j), .index(str,i,j),
+  .count(str,i,j), .strip(), .endswith(str,i,j), .join(ITR>str), .replace(str,str)
+  .title(), .isspace(), .isalpha(), .isdigit(), .rjust(n, str)
+
+List Methods:
+.append(v), .pop(i), .remove(v), .insert(i,v), .count(v), .extend(ITR), .copy(), .clear(),
+.sort() >>> (reverse=True)
+
+Tuple Methods:
+.count(v), .index(v)
+
+Set Methods:
+
+
+Dictionary Methods:
+.get(k) >>> (k, v), .pop(k), .values(), .keys(), .items(), .update(dict), .fromkeys(ITR, v)
+
+File Methods (.txt, .csv):
+.close(), .read() >>> (n), .seek(n), .readline(), .write(str)
+
+Class Built-In Functions:
+__init__(self, *), __str__(self), __eq__(self, p), __add__(self, p), __repr__(self),
+  __iter__(self), __next__(self)
+* self.__setattr__(k, v), self.__dict__
+
+Imports:
+- import MOD >>> import MOD as NAME ~~ from MOD import f/MOD >>> import f, f
+random
+time
+pprint
+string
+datetime
+csv
+json
+pickle
+abc
+math
+unittest
+re
+
+Decorators:
+@staticmethod
+@abstractmethod
+
+Extra:
+new_list = [x for x in other_list] --> 1 line list population
+new_dict = [k:v for i in other_list] --> 1 line dict population
+
+
+v - variable (or any value)
+n - number
+i/j - index
+p - parameter
+k - key
+f - function
+c - class
+COMP - comparison (bool)
+~~ - extra group of information
+/ - alternative
+>>> - extra non mandatory functionality
+&&& - similar functionality to another element
+^^x^^ - necessary part
+SUBJ - subject
+VAL - value
+ITR - iterable (str/list)
+NAME - name
+ARG - argument
+TYPE - type
+MOD - module
+DIR - directory or path
+OBJ - object
+EXC - exception

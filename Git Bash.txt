@@ -1,0 +1,71 @@
+$ - prompt
+
+COMMAND OPTIONS:
+-m - Message
+-b - Branch
+-u - save current settings
+--global - ?
+--delete - DELETE
+--cached - ?
+--force - FORCE
+
+COMMANDS:
+init - INITialize
+add - ADD
+status - STATUS
+commit - COMMIT
+checkout - ?
+merge - MERGE
+remote - REMOTE connection to a cloud Git repository
+push - PUSH changes to remote repository
+config - CONFIGure user identification
+pull - PULL changes from remote repository
+branch - BRANCH
+rm - ReMove
+fetch - FETCH
+
+
+# init - initialize an empty Git repository
+git init			(create a new repository if none exists and a hidden directory called .git)
+
+# add - add an object to the stage to commit
+git add <name>			(adds an object to the stage to commit)
+git add .			(adds all objects to the stage to commit)
+
+# status - gets the current status before next commit
+git status			(shows current status before commit)
+
+# commit - commits staged objects
+git commit -m "<text>"		(commits current stage with the provided message)
+
+# checkout - ?
+git checkout -b <name>		(creates a new branch)
+git checkout <name>		(moves to specified branch)
+
+# merge - merges branches
+git merge <name>		(merges changes from specified branch to current branch)
+
+# remote - connect to a remote repository
+git remote add <name> <URL>	(connects local repo to a remote repo - name is the name of the remote repo)
+
+# push - pushes changes to remote repository
+git push -u <name1> <name2>	(creates/updates changes in remote name1 in name2)
+git push origin --delete <name>	(deletes branch <name> from remote repo)
+git push origin main --force	(forced push)
+
+# config - configure user identification for commits
+git config --global user.name <name>	(user name)
+git config --global user.email <email>	(user email)
+
+# pull - pull changes from remote repository
+git pull <name1> <name2>	(pulls changes from branch name2 in name1 repo)
+
+# branch - enables various branch commands
+git branch			(lists branches)
+git branch -m <name1> <name2>	(changes branch name from name1 to name2)
+
+# rm - untrack objects
+git rm --cached <name>		(untrack object)
+git rm -r --cached <name>	(untrack directory and all its contents)
+
+<name> - often 'origin' for remote Git and 'main' for its main branch

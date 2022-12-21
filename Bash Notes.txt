@@ -1,0 +1,53 @@
+$ - prompt
+
+COMMANDS:
+echo - text output in the terminal
+pwd - Print Working Directory
+cd - Change Directory
+ls - LiSt
+mkdir - MaKe DIRectory
+rmdir - ReMove DIRectory
+touch - create blank file
+rm - ReMove file
+mv - MoVe
+
+OPTIONS:
+--help - show availabel options for command
+-a - also view hidden files
+-r - Recursive
+
+# echo - printing text to terminal
+echo <text>
+
+# pwd - show current directory
+pwd
+
+# cd - moving betweenn directories
+cd <name> 	(moves to sub-directory)
+cd <full path> 	(moves to path)
+cd .. 		(moves to parent directory)
+
+# list (default = current directory)
+ls		(lists files and directories)
+ls <name>	(lists files and directories in specified directory)
+ls -a		(also lists hidden and . files and directories)
+
+# mkdir - create new directory
+mkdir <name>	(make directory name)
+
+# rmdir - remove existing directory (has to be empty)
+rmdir <name>
+
+# touch - create blank file
+touch <name>
+
+# rm - remove files
+rm <name>	(removes file)
+rm -r <name>	(removes directory even if not empty)
+
+# mv - move and rename files and directories
+mv <object> <destination>	(moves object to destination)
+mv <object> <name>		(changes object name - name can't exist in the directory prior)
+
+
+ls -la --> more info

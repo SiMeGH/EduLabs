@@ -1,0 +1,30 @@
+Import:
+re
+
+Methods:
+.match(p, s)	- pattern in string (from index 0)
+.search(p, s)	- pattern in string (anywhere)
+
+
+Pattern Construction:
+~~s~~ - perfect match
+. - any character
+a-z - lowercase English alphabetical characters
+A-Z - uppercase English alphabetical characters
+0-9 - digits
+p* - any number of p			(0 or more)
+p+ - any number of p			(1 or more)
+p? - none or singular number of p	(0 or 1)
+[p] - set of character for single character encapsulation
+(p) - general encapsulation
+p{n} - exact number of repetitions of p
+^p - starts with p
+p$ - ends with p
+
+
+
+
+
+p - pattern
+s - string
+n - number
