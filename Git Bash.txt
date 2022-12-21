@@ -23,6 +23,7 @@ pull - PULL changes from remote repository
 branch - BRANCH
 rm - ReMove
 fetch - FETCH
+mv - MoVe
 
 
 # init - initialize an empty Git repository
@@ -49,7 +50,7 @@ git merge <name>		(merges changes from specified branch to current branch)
 git remote add <name> <URL>	(connects local repo to a remote repo - name is the name of the remote repo)
 
 # push - pushes changes to remote repository
-git push -u <name1> <name2>	(creates/updates changes in remote name1 in name2)
+git push -u <name1> <name2>	(creates/updates changes in remote name1 to name2)
 git push origin --delete <name>	(deletes branch <name> from remote repo)
 git push origin main --force	(forced push)
 
@@ -67,5 +68,11 @@ git branch -m <name1> <name2>	(changes branch name from name1 to name2)
 # rm - untrack objects
 git rm --cached <name>		(untrack object)
 git rm -r --cached <name>	(untrack directory and all its contents)
+
+# mv - move or rename object
+git mv <name1> <name2>		(rename object - ensure name2 doesn't already exist)
+
+
+
 
 <name> - often 'origin' for remote Git and 'main' for its main branch
