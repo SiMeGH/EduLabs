@@ -4,6 +4,7 @@ COMMAND OPTIONS:
 -m - Message
 -b - Branch
 -u - save current settings
+-r - ?
 --global - ?
 --delete - DELETE
 --cached - ?
@@ -65,7 +66,8 @@ git pull <name1> <name2>	(pulls changes from branch name2 in name1 repo)
 git branch			(lists branches)
 git branch -m <name1> <name2>	(changes branch name from name1 to name2)
 
-# rm - untrack objects
+# rm - untrack/delete objects
+git rm -f <name>		(untrack and delete object - has to be added first)
 git rm --cached <name>		(untrack object)
 git rm -r --cached <name>	(untrack directory and all its contents)
 
