@@ -2,8 +2,9 @@ Import:
 re
 
 Methods:
-.match(p, s)	- pattern in string (from index 0)
-.search(p, s)	- pattern in string (anywhere)
+.match(p, s)	- match pattern (from index 0)
+.search(p, s)	- search pattern (anywhere)
+.findall(p, s)	- all sequenced group patterns (anywhere)
 
 
 Pattern Construction:
@@ -15,14 +16,17 @@ A-Z - uppercase English alphabetical characters
 p* - any number of p			(0 or more)
 p+ - any number of p			(1 or more)
 p? - none or singular number of p	(0 or 1)
-[p] - set of character for single character encapsulation
+[p] - set of characters for a single character encapsulation
+[^p] - exclude set of characters for a single character encapsulation
 (p) - general encapsulation
-p{n} - exact number of repetitions of p
+p{n} ~~ p{n, n} - exact number of repetitions of p (blank n for infinity)
 ^p - starts with p
 p$ - ends with p
 
 
-
+Special Construction:
+(?!p) - negate pattern
+p*? - match minimum viable any number pattern
 
 
 p - pattern
