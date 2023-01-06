@@ -1,0 +1,44 @@
+select * from t;		- select all data from table
+select * from t str;		- select all data from table and give table an alias
+select h from t;		- select column from the table
+select * from t limit n;	- select n number of rows from all columns in table
+select * from t limit n offset n- select n number of rows starting after n rows from all columns in table
+select h, h from t;		- select columns from table
+select * from t where h op v;	- select columns for rows with columns that meet criteria op v from table
+select * from t order by h;	- select all columns with rows ordered by h from table
+select * from t order by h desc;- select all columns with rows in descending order by h from table
+select h, f from t group by h;	- select header after grouping headers and then applying function per group from table
+select * from t group by h, having comp	- filter groups by comp
+select distinct h from t;	- select unqiue values of header from table
+
+Global:
+--
+*
+as
+is
+not
+null
+
+Operators:
++, -, 
+>, <, =, !=
+and, or
+between X and Y
+
+
+Built-in Functions:
+count(h), max(h), min(h), avg(h), sum(h)
+round(v, n)
+distinct(h)
+now()
+date_part(v, datetime)
+
+
+op - operator
+v - variable
+h - column header
+t - table
+db - database
+str - string
+n - number
+comp - comparison

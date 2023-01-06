@@ -83,18 +83,24 @@ __init__(self, *), __str__(self), __eq__(self, p), __add__(self, p), __repr__(se
 
 Imports:
 - import MOD >>> import MOD as NAME ~~ from MOD import f/MOD >>> import f, f
-random
-time
-pprint
-string
-datetime
-csv
-json
-pickle
-abc
-math
-unittest
-re
+random		- random numbers
+time		- runtime
+pprint		- pretty print
+string		- string manipulation
+datetime	- date & time
+os		- operating system
+sys		- system
+csv		- csv files
+json		- json files
+pickle		- saving and loading python data
+abc		- abstract classes
+math		- math
+unittest	- unit tests
+re		- regular expressions
+requests	- api handler
+threading	- threading
+multiprocessing	- multiprocessing
+base64		- base en/decoding
 
 Decorators:
 @staticmethod
